@@ -19,4 +19,16 @@ abstract class Products
             $this->disponibility = false;
         }
     }
+
+    /**
+     * Set the value of name
+     *
+     * @return  self
+     */ 
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
 }

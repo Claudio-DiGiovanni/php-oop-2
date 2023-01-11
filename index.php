@@ -1,5 +1,6 @@
 <?php
 
+include_once __DIR__ . '/Traits/Counter.php';
 include_once __DIR__ . '/User.php';
 include_once __DIR__ . '/Box.php';
 include_once __DIR__ . '/CreditCard.php';
@@ -10,9 +11,9 @@ include_once __DIR__ . '/Products.php';
 include_once __DIR__ . '/db.php';
 
 $creditCard1 = new CreditCard(
-        $user1['cc_num'],
-        $user1['cc_cvc'],
-        $user1['cc_exp'],
+    $user1['cc_num'],
+    $user1['cc_cvc'],
+    $user1['cc_exp'],
 );
 
 $creditCard2 = new CreditCard(
@@ -116,5 +117,8 @@ $product9 = new Pesticide(
     $product9['quantity'],
 );
 
+$arrCreditCard = array($creditCard1, $creditCard2, $creditCard3);
+$arrUsers = array($user1, $user2, $user3);
+$arrProducts = array($product1, $product2, $product3, $product4, $product5, $product6, $product7, $product8, $product9);
 
-var_dump($product3);
+$product5->counter();

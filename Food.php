@@ -2,6 +2,7 @@
 include_once __DIR__ . '/Products.php';
 class Food extends Products 
 {
+    use Counter;
     public $animal;
     public $expiry;
 
@@ -11,4 +12,5 @@ class Food extends Products
         $this->animal = $animal;
         $this->expiry = $expiry;
     }
+
 }

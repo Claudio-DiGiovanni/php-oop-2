@@ -10,4 +10,5 @@ class User
 		$this->name = $name;
 		$this->creditCard = $creditCard;
 	}
+
 }

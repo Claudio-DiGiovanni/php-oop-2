@@ -11,4 +11,5 @@ class User
 		$this->creditCard = $creditCard;
 	}
 
+    use Delete;
 }

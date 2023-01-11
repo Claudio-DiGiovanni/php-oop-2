@@ -1,6 +1,7 @@
 <?php
 
 include_once __DIR__ . '/Traits/Counter.php';
+include_once __DIR__ . '/Traits/Delete.php';
 include_once __DIR__ . '/User.php';
 include_once __DIR__ . '/Box.php';
 include_once __DIR__ . '/CreditCard.php';
@@ -122,3 +123,7 @@ $arrUsers = array($user1, $user2, $user3);
 $arrProducts = array($product1, $product2, $product3, $product4, $product5, $product6, $product7, $product8, $product9);
 
 $product5->counter();
+$user1->deleteCard();
+
+var_dump($arrUsers);
+

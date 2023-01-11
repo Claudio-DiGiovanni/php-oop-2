@@ -127,3 +127,17 @@ $user1->deleteCard();
 
 var_dump($arrUsers);
 
+try {
+	echo divisione(5, 0);
+} catch (Exception $e) {
+	echo $e;
+}
+
+
+function divisione($num1, $num2) {
+	if ($num2 === 0) {
+		throw new Exception('Stai cercando di dividere per 0', 400);
+	} else {
+		return $num1 / $num2;
+	}
+}
